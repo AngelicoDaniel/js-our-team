@@ -30,3 +30,5 @@ const team = [
       image: 'assets/img/barbara-ramos-graphic-designer.jpg',
     },
   ];
+
+console.log(team)
