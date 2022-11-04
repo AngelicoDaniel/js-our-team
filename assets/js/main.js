@@ -1,3 +1,4 @@
+const cards = document.getElementById('cards')
 const team = [
     {
       name: 'Wayne Barnett',
@@ -31,4 +32,19 @@ const team = [
     },
   ];
 
-console.log(team)
+//console.log(team)
+
+for (let i = 0; i < team.length; i++) {
+    console.log(team[i])
+    let currentElement = team[i]
+    cards.innerHTML += `
+    <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    </div>`
+}
+
